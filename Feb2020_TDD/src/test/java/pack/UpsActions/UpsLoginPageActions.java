@@ -24,9 +24,14 @@ public class UpsLoginPageActions {
 	public void submit() {
 		loginPageElements.submitBtn.click();
 	}
-	
-	public String errorMsg(){
+
+	public String errorMsg() {
 		return loginPageElements.errorMsg.getText();
 	}
-	
+
+	public String loginButtonText() {
+
+		return loginPageElements.submitBtn.getText();
+	}
+
 }

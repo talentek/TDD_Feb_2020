@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="6362" started-at="2020-04-19T00:45:05Z" finished-at="2020-04-19T00:45:11Z">
+  <suite name="UpsRegressionTestSuite" duration-ms="21099" started-at="2020-05-02T22:47:12Z" finished-at="2020-05-02T22:47:33Z">
     <groups>
+      <group name="regressionTest">
+        <method signature="UpsLoginTest.verifyLoginErrorMsg()[pri:3, instance:pack.UpsTest.UpsLoginTest@90f6bfd]" name="verifyLoginErrorMsg" class="pack.UpsTest.UpsLoginTest"/>
+        <method signature="UpsShippingTest.verifyShippingFromTest()[pri:0, instance:pack.UpsTest.UpsShippingTest@47f6473]" name="verifyShippingFromTest" class="pack.UpsTest.UpsShippingTest"/>
+      </group> <!-- regressionTest -->
     </groups>
-    <test name="Test" duration-ms="6362" started-at="2020-04-19T00:45:05Z" finished-at="2020-04-19T00:45:11Z">
+    <test name="UpsRegressionTest" duration-ms="21099" started-at="2020-05-02T22:47:12Z" finished-at="2020-05-02T22:47:33Z">
       <class name="pack.UpsTest.UpsLoginTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:pack.UpsTest.UpsLoginTest@48f278eb]" name="beforeMethod" is-config="true" duration-ms="4145" started-at="2020-04-19T00:45:05Z" finished-at="2020-04-19T00:45:09Z">
+        <test-method status="PASS" signature="beforeMethod(java.lang.String)[pri:0, instance:pack.UpsTest.UpsLoginTest@90f6bfd]" name="beforeMethod" is-config="true" duration-ms="5823" started-at="2020-05-02T22:47:24Z" finished-at="2020-05-02T22:47:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="loginErrorMsg()[pri:0, instance:pack.UpsTest.UpsLoginTest@48f278eb]" name="loginErrorMsg" duration-ms="1659" started-at="2020-04-19T00:45:09Z" finished-at="2020-04-19T00:45:11Z">
+        <test-method status="PASS" signature="verifyLoginErrorMsg()[pri:3, instance:pack.UpsTest.UpsLoginTest@90f6bfd]" name="verifyLoginErrorMsg" duration-ms="2192" started-at="2020-05-02T22:47:30Z" finished-at="2020-05-02T22:47:32Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginErrorMsg -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:pack.UpsTest.UpsLoginTest@48f278eb]" name="afterTest" is-config="true" duration-ms="541" started-at="2020-04-19T00:45:11Z" finished-at="2020-04-19T00:45:11Z">
+        </test-method> <!-- verifyLoginErrorMsg -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:pack.UpsTest.UpsLoginTest@90f6bfd]" name="afterTest" is-config="true" duration-ms="793" started-at="2020-05-02T22:47:32Z" finished-at="2020-05-02T22:47:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- pack.UpsTest.UpsLoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      <class name="pack.UpsTest.UpsShippingTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:pack.UpsTest.UpsShippingTest@47f6473]" name="beforeMethod" is-config="true" duration-ms="8219" started-at="2020-05-02T22:47:12Z" finished-at="2020-05-02T22:47:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verifyShippingFromTest()[pri:0, instance:pack.UpsTest.UpsShippingTest@47f6473]" name="verifyShippingFromTest" duration-ms="3278" started-at="2020-05-02T22:47:20Z" finished-at="2020-05-02T22:47:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyShippingFromTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:pack.UpsTest.UpsShippingTest@47f6473]" name="afterTest" is-config="true" duration-ms="766" started-at="2020-05-02T22:47:23Z" finished-at="2020-05-02T22:47:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- pack.UpsTest.UpsShippingTest -->
+    </test> <!-- UpsRegressionTest -->
+  </suite> <!-- UpsRegressionTestSuite -->
 </testng-results>

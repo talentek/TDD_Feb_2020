@@ -6,7 +6,7 @@
       <class name="pack.UpsTest.UpsLoginTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="loginErrorMsg"/>
+          <include name="loginButtonText"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- pack.UpsTest.UpsLoginTest -->

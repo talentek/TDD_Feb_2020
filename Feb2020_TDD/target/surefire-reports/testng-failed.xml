@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
-  <test thread-count="5" verbose="0" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [UpsRegressionTestSuite]">
+  <test thread-count="5" verbose="0" name="UpsRegressionTest(failed)">
+    <groups>
+      <run>
+        <include name="regressionTest"/>
+      </run>
+    </groups>
     <classes>
       <class name="pack.UpsTest.UpsLoginTest">
         <methods>
           <include name="beforeMethod"/>
-          <include name="loginErrorMsg"/>
+          <include name="verifyLoginErrorMsg"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- pack.UpsTest.UpsLoginTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- UpsRegressionTest(failed) -->
+</suite> <!-- Failed suite [UpsRegressionTestSuite] -->

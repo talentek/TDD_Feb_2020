@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [UpsLoginTestSuite]" parallel="tests">
+  <test thread-count="2" verbose="0" name="UpsLoginChromeTest(failed)" parallel="tests">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="pack.UpsTest.UpsLoginTest">
+        <methods>
+          <include name="verifyLoginButtonText"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- pack.UpsTest.UpsLoginTest -->
+    </classes>
+  </test> <!-- UpsLoginChromeTest(failed) -->
+  <test thread-count="2" verbose="0" name="UpsLoginFirefoxTest(failed)" parallel="tests">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="pack.UpsTest.UpsLoginTest">
+        <methods>
+          <include name="verifyLoginButtonText"/>
+          <include name="beforeMethod"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- pack.UpsTest.UpsLoginTest -->
+    </classes>
+  </test> <!-- UpsLoginFirefoxTest(failed) -->
+</suite> <!-- Failed suite [UpsLoginTestSuite] -->
